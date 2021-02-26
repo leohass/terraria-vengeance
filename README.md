@@ -1,2 +1,0 @@
-# terraria-vengeance
-Prototype mods
