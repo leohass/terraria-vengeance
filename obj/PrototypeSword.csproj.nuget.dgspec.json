@@ -1,0 +1,57 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\L.Hasslöver\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\PrototypeSword\\PrototypeSword.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\L.Hasslöver\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\PrototypeSword\\PrototypeSword.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\L.Hasslöver\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\PrototypeSword\\PrototypeSword.csproj",
+        "projectName": "PrototypeSword",
+        "projectPath": "C:\\Users\\L.Hasslöver\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\PrototypeSword\\PrototypeSword.csproj",
+        "packagesPath": "C:\\Users\\L.Hasslöver\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\L.Hasslöver\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\PrototypeSword\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\L.Hasslöver\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net45"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net45": {
+            "targetAlias": "net45",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net45": {
+          "targetAlias": "net45",
+          "dependencies": {
+            "tModLoader.CodeAssist": {
+              "target": "Package",
+              "version": "[0.1.*, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

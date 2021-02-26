@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "oUb/rA9ajmtWwH5eYlscqPSe6DmDG+YH+x4R5HXqPkwzSG14w4/4LbYeW+3u8a0E9mnxLrtGjYEzvpBHEo8glg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\L.Hasslöver\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\PrototypeSword\\PrototypeSword.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\L.Hasslöver\\.nuget\\packages\\tmodloader.codeassist\\0.1.1\\tmodloader.codeassist.0.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}

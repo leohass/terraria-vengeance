@@ -1,0 +1,3 @@
+displayName = PrototypeSword
+author = Masouri
+version = 0.1
