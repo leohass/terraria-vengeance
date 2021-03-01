@@ -15,7 +15,7 @@ namespace PrototypeSword.Items
         public override void SetStaticDefaults()
         {
             // DisplayName.SetDefault("Vengeance"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
-            Tooltip.SetDefault("Youre Enemys wont whisper they will scream in Agony");
+            Tooltip.SetDefault("Youre Enemys wont whisper, they will scream in Agony");
         }
 
         public override void SetDefaults()
