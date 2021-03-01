@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\L.Hasslöver\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\PrototypeSword\\PrototypeSword.csproj": {}
+    "C:\\Users\\L.Hasslöver\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\Vengeance\\PrototypeSword.csproj": {}
   },
   "projects": {
-    "C:\\Users\\L.Hasslöver\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\PrototypeSword\\PrototypeSword.csproj": {
+    "C:\\Users\\L.Hasslöver\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\Vengeance\\PrototypeSword.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\L.Hasslöver\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\PrototypeSword\\PrototypeSword.csproj",
+        "projectUniqueName": "C:\\Users\\L.Hasslöver\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\Vengeance\\PrototypeSword.csproj",
         "projectName": "PrototypeSword",
-        "projectPath": "C:\\Users\\L.Hasslöver\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\PrototypeSword\\PrototypeSword.csproj",
+        "projectPath": "C:\\Users\\L.Hasslöver\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\Vengeance\\PrototypeSword.csproj",
         "packagesPath": "C:\\Users\\L.Hasslöver\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\L.Hasslöver\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\PrototypeSword\\obj\\",
+        "outputPath": "C:\\Users\\L.Hasslöver\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\Vengeance\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

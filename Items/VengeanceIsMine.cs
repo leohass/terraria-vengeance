@@ -7,7 +7,7 @@ using Terraria;
 using Terraria.ModLoader;
 using Terraria.ID;
 
-namespace PrototypeSword.Items
+namespace Vengeance.Items
 {
     class VengeanceIsMine : ModItem
     {
@@ -26,7 +26,7 @@ namespace PrototypeSword.Items
         }
         public override void UpdateAccessory(Player player, bool hideVisual = false)
         {
-            player.AddBuff(mod.BuffType("VengeanceIsMine"), 3600);
+            player.AddBuff(mod.BuffType("DefensiveStance"), 3600);
         } 
     }
 

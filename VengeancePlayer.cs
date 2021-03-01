@@ -8,7 +8,7 @@ using Terraria.ModLoader;
 using Terraria.ID;
 using Microsoft.Xna.Framework;
 
-namespace PrototypeSword
+namespace Vengeance
 {
     class VengeancePlayer : ModPlayer
     {
@@ -25,6 +25,7 @@ namespace PrototypeSword
             HandleVengeance(damage);
         }
 
+        //This handles the Damage Tracking and sets a new Buff when Threshol is reached(Incredible Hacky i know but dont know how to fix)
         public void HandleVengeance(int damage)
         {
             if (player.HasBuff(mod.BuffType("VengeanceIsMine")))

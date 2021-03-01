@@ -1,9 +1,9 @@
-using PrototypeSword.Projectiles;
+using Vengeance.Projectiles;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace PrototypeSword.Items
+namespace Vengeance.Items
 {
 	public class Vengeance : ModItem
 	{
@@ -54,14 +54,23 @@ namespace PrototypeSword.Items
 
                 if (player.HasBuff(mod.BuffType("Vengeance")))
                 {
-					item.damage = 50000;
-					item.useTime = 150;
-					item.useAnimation = 150;
-					item.useStyle = 4;
-					item.scale = 4f;
-					item.noMelee = true;
-					item.autoReuse = false;
+					item.damage = 360;
+					item.useTime = 10;
+					item.useAnimation = 10;
+					item.useStyle = 3;
+					item.scale = 3f;
+					item.autoReuse = true;
 					this.i++;
+
+					
+					if (this.i == 2)
+					{
+						item.shoot = mod.ProjectileType("VengeanceProjectile");
+						item.shootSpeed = 16f;
+						item.useStyle = 1;
+						
+						this.i = 0;
+					}
                 }
                 else
                 {
@@ -69,14 +78,6 @@ namespace PrototypeSword.Items
 					item.scale = 2f;
 					item.shoot = 0;
                 }
-				if (this.i == 2)
-				{
-					item.shoot = mod.ProjectileType("VengeanceProjectile");
-					item.shootSpeed = 16f;
-					item.useStyle = 1;
-					this.i = 0;
-					player.ClearBuff(mod.BuffType("Vengeance"));
-				}
 
 			}
 			else

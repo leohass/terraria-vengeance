@@ -8,7 +8,7 @@ using Terraria.ModLoader;
 using Terraria.ID;
 using Microsoft.Xna.Framework;
 
-namespace PrototypeSword.Items
+namespace Vengeance.Items
 {
     class LastWhisper : ModItem
     {
