@@ -15,6 +15,7 @@ namespace PrototypeSword.Items
 			Tooltip.SetDefault("Brother... Avenge me");
 		}
 
+		int i = 0;
 		public override void SetDefaults() 
 		{
 			item.damage = 240;
@@ -47,22 +48,41 @@ namespace PrototypeSword.Items
         {
             if(player.altFunctionUse == 2)
             {
-				item.damage = item.damage * 10;
-				item.useTime = 1800;
-				item.useAnimation = 30;
-				item.useStyle = 1;
-				item.scale = 8f;
-				item.shoot = ModContent.ProjectileType<VengeanceProjectile>();
-				item.shootSpeed = 16f;
-				item.autoReuse = false;
-				item.noMelee = true;
-				item.notAmmo = true;
+				
+
+				
+
+                if (player.HasBuff(mod.BuffType("Vengeance")))
+                {
+					item.damage = 50000;
+					item.useTime = 150;
+					item.useAnimation = 150;
+					item.useStyle = 4;
+					item.scale = 4f;
+					item.noMelee = true;
+					item.autoReuse = false;
+					this.i++;
+                }
+                else
+                {
+					item.damage = 240;
+					item.scale = 2f;
+					item.shoot = 0;
+                }
+				if (this.i == 2)
+				{
+					item.shoot = mod.ProjectileType("VengeanceProjectile");
+					item.shootSpeed = 16f;
+					item.useStyle = 1;
+					this.i = 0;
+					player.ClearBuff(mod.BuffType("Vengeance"));
+				}
 
 			}
 			else
             {
 				item.scale = 2f;
-				item.damage = 520;
+				item.damage = 240;
 				item.width = 40;
 				item.height = 40;
 				item.useTime = 20;
