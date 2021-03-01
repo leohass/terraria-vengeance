@@ -7,7 +7,7 @@ using Terraria;
 using Terraria.ModLoader;
 using Terraria.ID;
 
-namespace PrototypeSword.Projectiles
+namespace Vengeance.Projectiles
 {
     public class VengeanceProjectile : ModProjectile
     {

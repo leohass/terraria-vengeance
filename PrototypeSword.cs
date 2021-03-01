@@ -1,6 +1,6 @@
 using Terraria.ModLoader;
 
-namespace PrototypeSword
+namespace Vengeance
 {
 	public class PrototypeSword : Mod
 	{

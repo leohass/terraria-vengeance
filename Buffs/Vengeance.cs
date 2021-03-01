@@ -8,7 +8,7 @@ using Terraria;
 using Terraria.ID;
 
 
-namespace PrototypeSword.Buffs
+namespace Vengeance.Buffs
 {
     class Vengeance : ModBuff
     {

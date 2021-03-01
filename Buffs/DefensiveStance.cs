@@ -7,14 +7,14 @@ using Terraria.ModLoader;
 using Terraria.ID;
 using Terraria;
 
-namespace PrototypeSword.Buffs
+namespace Vengeance.Buffs
 {
-    public class VengeanceIsMine : ModBuff
+    public class DefensiveStance : ModBuff
     {
         public override void SetDefaults()
         {
             DisplayName.SetDefault("Defensive Stance");
-            Description.SetDefault("The Swords bloom with Anger");
+            Description.SetDefault("The Swords Protect you");
 
         }
 

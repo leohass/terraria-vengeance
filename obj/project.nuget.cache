@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oUb/rA9ajmtWwH5eYlscqPSe6DmDG+YH+x4R5HXqPkwzSG14w4/4LbYeW+3u8a0E9mnxLrtGjYEzvpBHEo8glg==",
+  "dgSpecHash": "ERnR3Se0vjMtLK5ZooAxTYFJz7Q7U4CQdsyB+tzxl3QCkEC/MMzuurGyKNNnwSLq8UUtIBVY2lLY7mNwDxd0gw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\L.Hasslöver\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\PrototypeSword\\PrototypeSword.csproj",
+  "projectFilePath": "C:\\Users\\L.Hasslöver\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\Vengeance\\PrototypeSword.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\L.Hasslöver\\.nuget\\packages\\tmodloader.codeassist\\0.1.1\\tmodloader.codeassist.0.1.1.nupkg.sha512"
   ],

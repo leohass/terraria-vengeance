@@ -7,7 +7,7 @@ using Terraria;
 using Terraria.ModLoader;
 using Terraria.ID;
 
-namespace PrototypeSword.Projectiles
+namespace Vengeance.Projectiles
 {
     class NaniteInfectionBullet : ModProjectile
     {
@@ -20,7 +20,7 @@ namespace PrototypeSword.Projectiles
             projectile.penetrate = 10;
             projectile.tileCollide = true;
             projectile.timeLeft = 300;
-            projectile.scale = 1f;
+            projectile.scale = 1.2f;
             projectile.light = 0.75f;
             projectile.ranged = true;
             projectile.aiStyle = 0;
