@@ -65,6 +65,11 @@ namespace Vengeance.Items
             // We can get the Clockwork Assault Riffle Effect by not consuming ammo when itemAnimation is lower than the first shot.
             return !(player.itemAnimation < item.useAnimation - 2);
         }
-        
+
+        public override void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
+        {
+            target.AddBuff(mod.BuffType("NaniteInfection"), 300);
+        }
+
     }
 }

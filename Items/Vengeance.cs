@@ -76,12 +76,6 @@ namespace Vengeance.Items
 							this.i = 0;
 						}
 					}
-					else
-					{
-						item.damage = 240;
-						item.scale = 2f;
-						item.shoot = 0;
-					}
 				}
             }
 			else
