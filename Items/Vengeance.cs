@@ -54,16 +54,17 @@ namespace Vengeance.Items
 
                 if (player.HasBuff(mod.BuffType("Vengeance")))
                 {
-					item.damage = 360;
-					item.useTime = 10;
-					item.useAnimation = 10;
-					item.useStyle = 3;
-					item.scale = 3f;
-					item.autoReuse = true;
-					this.i++;
-
-					
-					if (this.i == 2)
+					if(this.i != 2)
+                    {
+						item.damage = 360;
+						item.useTime = 10;
+						item.useAnimation = 10;
+						item.useStyle = 3;
+						item.scale = 3f;
+						item.autoReuse = true;
+						this.i++;
+                    }
+					else if (this.i == 2)
 					{
 						item.shoot = mod.ProjectileType("VengeanceProjectile");
 						item.shootSpeed = 16f;
