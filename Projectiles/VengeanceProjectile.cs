@@ -13,13 +13,13 @@ namespace Vengeance.Projectiles
     {
         public override void SetDefaults()
         {
-            projectile.height = 320;
-            projectile.width = 320;
+            projectile.height = 160;
+            projectile.width = 160;
             projectile.friendly = true;
             projectile.penetrate = 1000;
             projectile.tileCollide = false;
-            projectile.timeLeft = 1800;
-            projectile.scale = 1f;
+            projectile.timeLeft = 100;
+            projectile.scale = 0.5f;
             projectile.light = 0.75f;
             projectile.melee = true;
             projectile.aiStyle = 0;
