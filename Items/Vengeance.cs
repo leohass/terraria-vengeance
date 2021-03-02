@@ -92,10 +92,23 @@ namespace Vengeance.Items
 					item.autoReuse = true;
 					item.noMelee = false;
 				}
-            }
+            } 
+			else 
+			{
+				item.scale = 2f;
+				item.damage = 240;
+				item.width = 40;
+				item.height = 40;
+				item.useTime = 20;
+				item.useAnimation = 20;
+				item.useStyle = 1;
+				item.knockBack = 6;
+				item.shoot = 0;
+				item.UseSound = SoundID.Item1;
+				item.autoReuse = true;
+				item.noMelee = false;
+			}
 			return base.CanUseItem(player);
         }
-		
-		
     }
 }
