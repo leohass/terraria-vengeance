@@ -30,11 +30,11 @@ namespace Vengeance.Items
             item.scale = 0.7f;
 			item.shoot = 10;
             item.useAmmo = AmmoID.Bullet;
-            item.shootSpeed = 50;
+            item.shootSpeed = 40;
             item.autoReuse = true;
             item.useAnimation = 12;
             item.useTime = 4;
-            item.reuseDelay = 14;
+            item.reuseDelay = 20;
         }
 
         public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
