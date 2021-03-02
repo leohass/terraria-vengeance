@@ -46,40 +46,44 @@ namespace Vengeance.Items
 		}
         public override bool CanUseItem(Player player)
         {
-            if(player.altFunctionUse == 2)
+			if(player.HasBuff(mod.BuffType("Empowered")) || player.HasBuff(mod.BuffType("Vengeance")))
             {
-				
-
-				
-
-                if (player.HasBuff(mod.BuffType("Vengeance")))
-                {
-					item.damage = 360;
-					item.useTime = 10;
-					item.useAnimation = 10;
-					item.useStyle = 3;
-					item.scale = 3f;
-					item.autoReuse = true;
-					this.i++;
-
-					
-					if (this.i == 2)
+				if(player.altFunctionUse == 2)
+				{
+					if (player.HasBuff(mod.BuffType("Empowered")))
 					{
-						item.shoot = mod.ProjectileType("VengeanceProjectile");
-						item.shootSpeed = 16f;
-						item.useStyle = 1;
-						
-						this.i = 0;
+						player.AddBuff(mod.BuffType("Vengeance"), 3600);
+						player.ClearBuff(mod.BuffType("Empowered"));
 					}
-                }
-                else
-                {
-					item.damage = 240;
-					item.scale = 2f;
-					item.shoot = 0;
-                }
-
-			}
+					if (player.HasBuff(mod.BuffType("Vengeance")))
+					{
+						if(this.i != 2)
+						{
+							item.damage = 360;
+							item.useTime = 10;
+							item.useAnimation = 10;
+							item.useStyle = 3;
+							item.scale = 3f;
+							item.autoReuse = true;
+							this.i++;
+						}
+						else if (this.i == 2)
+						{
+							item.shoot = mod.ProjectileType("VengeanceProjectile");
+							item.shootSpeed = 16f;
+							item.useStyle = 1;
+						
+							this.i = 0;
+						}
+					}
+					else
+					{
+						item.damage = 240;
+						item.scale = 2f;
+						item.shoot = 0;
+					}
+				}
+            }
 			else
             {
 				item.scale = 2f;

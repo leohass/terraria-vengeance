@@ -40,7 +40,7 @@ namespace Vengeance
             }
             if (player.GetModPlayer<VengeancePlayer>().accumulated_damage >= 500 || true)
             {
-                player.AddBuff(mod.BuffType("Vengeance"), 3600);
+                player.AddBuff(mod.BuffType("Empowered"), 7400);
                 player.GetModPlayer<VengeancePlayer>().accumulated_damage = 0;
 
             }
