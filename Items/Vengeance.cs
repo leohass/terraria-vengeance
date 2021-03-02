@@ -25,6 +25,7 @@ namespace Vengeance.Items
 			item.useStyle = 1;
 			item.value = 10000;
 			item.rare = 5;
+			item.shootSpeed = 16f;
 		}
 
 		public override void AddRecipes() 
@@ -66,7 +67,6 @@ namespace Vengeance.Items
 					if (this.i == 2)
 					{
 						item.shoot = mod.ProjectileType("VengeanceProjectile");
-						item.shootSpeed = 16f;
 						item.useStyle = 1;
 						
 						this.i = 0;
