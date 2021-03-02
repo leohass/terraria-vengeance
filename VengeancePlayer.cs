@@ -28,9 +28,12 @@ namespace Vengeance
         //This handles the Damage Tracking and sets a new Buff when Threshol is reached(Incredible Hacky i know but dont know how to fix)
         public void HandleVengeance(int damage)
         {
-            if (player.HasBuff(mod.BuffType("VengeanceIsMine")))
+            if (player.HasBuff(mod.BuffType("DefensiveStance")))
             {
-                player.GetModPlayer<VengeancePlayer>().accumulated_damage += damage;
+                if (!player.HasBuff(mod.BuffType("Empowered")) && !player.HasBuff(mod.BuffType("Vengeance")))
+                {
+                    player.GetModPlayer<VengeancePlayer>().accumulated_damage += damage;
+                }
 
                 if (player.GetModPlayer<VengeancePlayer>().accumulated_damage > 500)
                 {
@@ -38,6 +41,7 @@ namespace Vengeance
                 }
 
             }
+
             if (player.GetModPlayer<VengeancePlayer>().accumulated_damage >= 500 || true)
             {
                 player.AddBuff(mod.BuffType("Empowered"), 7400);
